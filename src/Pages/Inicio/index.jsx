@@ -3,6 +3,7 @@ import api from "../../services/api";
 import CompanyCard from "../../Components/CompanyCard";
 
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 import { PlusCircleOutlined } from '@ant-design/icons';
 
@@ -32,7 +33,9 @@ export default function Inicio() {
                 {companies.map((company) => {
                     return (
                         <li key={company.id}>
-                            <CompanyCard name={company.name} id={company.id} />
+                            <Link to={`/empresa/ativos`}>
+                                <CompanyCard name={company.name} id={company.id} />
+                            </Link>
                         </li>
                     )
                 })}
