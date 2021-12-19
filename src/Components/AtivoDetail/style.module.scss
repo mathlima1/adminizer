@@ -1,0 +1,80 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    .ativoInfo{
+        display:flex;
+        flex-direction: column;
+        background-color: var(--White);
+        padding: 0.5em;
+        width: 25vw;
+        min-height: 100vh;
+        .ativoInfoImage{
+            width:100%;
+            img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 1em;
+            }
+            h2{
+                margin-bottom:1em;
+            }
+        }
+        .ativoInfoContent{
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 2px solid var(--Dark);
+                padding: 1em 0;
+                h5{
+                    font-weight: 600;
+                }
+                h5,span{
+                    font-size: 16px !important;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .charts{
+        width: 72%;
+        margin: 0 15px;
+        .doubleChart{
+            display: flex !important;
+            div{
+
+                display: flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:space-evenly;
+                width: 50%;
+                min-height: 300px !important;
+                padding: 25px;
+                background-color: var(--White);
+                margin-top: 15px;
+                & + div{
+                    margin-left: 15px;
+                }
+                h5{
+                    font-size: 1.5vw;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+                span{
+                    height: 7vw;
+                    width: 7vw;
+                    font-size: 1.5vw;
+                    font-weight: 500yarn start;
+                    border: 5px solid var(--Dark);
+                    padding: 20px 20px;
+                    border-radius: 1000px;
+
+                    display: flex;
+                    flex-direction:column;
+                    align-items:center;
+                    justify-content:center
+                }
+            }
+        }
+    }
+}

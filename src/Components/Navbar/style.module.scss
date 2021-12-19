@@ -1,0 +1,16 @@
+.container{
+    background-color: var(--Dark);
+    width: 100%;
+    padding: 2% 0;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    .logoWrap{
+        margin: 0 10%;
+        h1{
+            color: var(--White);
+            margin: 0;
+            text-transform: uppercase;
+        }
+    }
+}

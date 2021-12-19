@@ -1,0 +1,23 @@
+.container{
+    min-height: 100vh;
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button{
+            font-size:20px;
+            padding: 5px 25px;
+            height: auto;
+        }
+        > h2{
+            margin: 3% 0 ;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-bottom:1em;
+        }
+    }
+}

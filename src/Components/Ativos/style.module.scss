@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    .CardWrap{
+        width:29%;
+        background-color: var(--White);
+        margin: 1em;
+        position: relative;
+        span{
+            padding: 0.3em 0.8em;
+            font-weight: 500;
+            border-radius: 2px;
+            position:absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .CardImg{
+            height:30vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .CardDetails{
+            padding: 1em;
+            button{
+                background-color: var(--Turquesa);
+                border: none;
+                color: var(--White);
+                padding: 0.5em 1em;
+                
+            }
+        }
+    }
+}
